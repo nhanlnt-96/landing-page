@@ -1,0 +1,54 @@
+//fonts
+$poppins-font: 'Poppins', sans-serif;
+
+//color
+$main-color: #181818;
+$primary-color: #4452FE;
+$secondary-color: #02E4C0;
+$btn-hover-color: #f1f1f1;
+
+//display
+@mixin display-flex($display,$fd,$jc,$ai) {
+  display: $display;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin heading {
+  h2, p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 52px;
+    font-weight: lighter;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@mixin primary-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: $primary-color;
+}
+
+@mixin secondary-btn {
+  background-color: transparent;
+  padding: 10px 30px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border: 1px solid white;
+}
+
+@mixin btn-hover {
+  background-color: $btn-hover-color;
+  color: $main-color;
+}

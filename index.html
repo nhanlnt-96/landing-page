@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <link rel="icon" href="favicon.ico"/>-->
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/rwd.css"/>
+    <title>Landing Page</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row fixed-top header-bg-color">
+        <div class="container header-inline">
+            <nav class="header-menu">
+                <img src="assets/img/logo.png" alt="landing-page-logo"/>
+                <div class="col-xl-8 col-lg-8 p-0 header-menu-item">
+                    <ul class="m-0 p-0 navbar-responsive">
+                        <li>Home</li>
+                        <li>Product</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <form class="header-menu-btn">
+                    <button type="submit">Login</button>
+                </form>
+            </nav>
+
+            <div class="burger-menu">
+                <i class="fas fa-bars burger-item" id="burger-btn-click"></i>
+                <i class="fas fa-times close-item" id="close-btn-click"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row section-1">
+        <div class="container d-flex justify-content-center align-items-center section-1-container">
+            <div class="col-xl-8 col-12 section-1-title">
+                <h1>Work at the speed of thought</h1>
+                <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to
+                    plan their schedule.</p>
+            </div>
+
+            <div class="section-1-btn">
+                <button>Try For Free</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="col-xl-12 section-1-footer">
+            <img src="./assets/img/screens.png" alt="figma-land-bg"/>
+        </div>
+    </div>
+    <div class="row section-2">
+        <div class="container features">
+            <div class="col-xl-8 col-12 feature-heading">
+                <h2>FEATURES</h2>
+                <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to
+                    plan their schedule.</p>
+            </div>
+            <div class="row col-12 feature-content">
+                <img src="./assets/img/feature.png" alt="features"/>
+                <div class="features-items">
+                    <div class="item">
+                        <p><i class="fas fa-utensils"></i> A single source of truth</p>
+                        <span>When you add work to your Slate calendar we automatically calculate useful insights</span>
+                    </div>
+                    <div class="item">
+                        <p><i class="fas fa-burn"></i> Intuitive interface</p>
+                        <span>When you add work to your Slate calendar we automatically calculate useful insights</span>
+                    </div>
+                    <div class="item">
+                        <p><i class="fas fa-infinity"></i> Or with rules</p>
+                        <span>When you add work to your Slate calendar we automatically calculate useful insights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row section-3">
+        <div class="container contents">
+            <div class="col-xl-8 col-12 contents-heading">
+                <h2>Contents</h2>
+                <p>We focus on ergonomics and meeting you where you work.
+                    It's only a keystroke away.</p>
+            </div>
+            <div class="row contents-items">
+                <div class="col-xl-5 col-10 item">
+                    <div class="item-title">
+                        <p>Work</p>
+                        <span>Ever wondered if you're too reliant on a client for work? Slate helps you identify.</span>
+                    </div>
+                    <div class="item-btn">
+                        <button>Sign up</button>
+                    </div>
+                    <div class="item-img">
+                        <img src="./assets/img/macbook-pro.png" alt="work-img"/>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-10 item">
+                    <div class="item-title">
+                        <p>Design with real data</p>
+                        <span>Ever wondered if you're too reliant on a client for work? Slate helps you identify.</span>
+                    </div>
+                    <div class="item-btn">
+                        <button>Try For Free</button>
+                    </div>
+                    <div class="item-img">
+                        <img src="./assets/img/board-noti.png" alt="board-noti-img"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script src="./scripts/main.js"></script>
+</body>
+</html>
