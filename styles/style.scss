@@ -55,7 +55,7 @@ body {
 
 //margin bottom{
 .section-2,
-.section-3, .section-4, section-5 {
+.section-3, .section-4, section-5, section-6 {
   margin-top: 100px;
 }
 
@@ -70,7 +70,6 @@ body {
     margin-bottom: 35px;
 
     .section-1-title {
-
       h1,
       p {
         text-align: center;
@@ -118,9 +117,7 @@ body {
     padding: 62px 50px;
 
     .feature-heading {
-      color: white;
-      margin-bottom: 80px;
-      @include lib.heading;
+      @include lib.heading(80px);
     }
 
     .feature-content {
@@ -164,9 +161,7 @@ body {
     padding: 50px 100px;
 
     .contents-heading {
-      color: white;
-      @include lib.heading;
-      margin-bottom: 44px;
+      @include lib.heading(44px);
     }
 
     .contents-items {
@@ -233,9 +228,7 @@ body {
     padding: 50px 100px;
 
     .gallery-heading {
-      color: white;
-      @include lib.heading;
-      margin-bottom: 44px;
+      @include lib.heading(44px);
     }
 
     .gallery-items {
@@ -287,22 +280,81 @@ body {
 
 //section 5
 .section-5 {
+  padding: 50px 100px;
+
   .partners {
     @include lib.display-flex(flex, column, center, center);
     padding: 50px 100px;
 
     .partners-heading {
-      color: white;
-      @include lib.heading;
+      @include lib.heading(44px);
     }
 
     .partners-items {
-      padding: 50px 0px;
+      @include lib.display-flex(flex, row, center, center);
+      margin-bottom: 44px;
 
+      div {
+        @include lib.display-flex(flex, row, space-around, center);
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+  button {
+    @include lib.secondary-btn;
+
+    &:hover {
+      @include lib.btn-hover;
     }
   }
 }
 
+//section 6
+.section-6 {
+  padding: 50px 100px;
+
+  .testimonials {
+    padding: 50px 100px;
+
+    .testimonials-heading {
+      @include lib.heading(44px);
+    }
+
+    .testimonials-item {
+      justify-content: center;
+
+      .item {
+        padding: 40px;
+        color: white;
+        border-radius: 10px;
+        border: 1px solid #dedede;
+        margin: 0px 10px 10px 0px;
+
+        .item-heading {
+          @include lib.display-flex(flex, none, none, center);
+          margin-bottom: 30px;
+          font-weight: 600;
+          font-size: 16px;
+
+          .avatar {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//section 7
+.section-7 {
+  padding: 80px 0px;
+
+  .open-type {
+    border-radius: 33px;
+    background-color: #343434;
+  }
+}
 
 //active class
 .is-navbar-active {

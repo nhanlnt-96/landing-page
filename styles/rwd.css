@@ -84,15 +84,44 @@
     margin-bottom: 0px !important;
   }
 
-  .section-4 .item-line-1 .item {
+  .section-4 .gallery {
+    padding: 0px;
+  }
+  .section-4 .gallery .item-line-1 .item {
     margin-right: 0px !important;
     margin-bottom: 33px;
   }
-  .section-4 .item-line-1 .item:last-child {
+  .section-4 .gallery .item-line-1 .item:last-child {
     margin-bottom: 0px;
   }
-  .section-4 .item-line-2 {
+  .section-4 .gallery .item-line-2 {
     display: none !important;
+  }
+
+  .section-5 {
+    padding: 50px 0px;
+  }
+  .section-5 .partners {
+    padding: 0px;
+  }
+  .section-5 .partners .partners-items {
+    flex-direction: column;
+  }
+  .section-5 .partners .partners-items div .last-partners-item {
+    width: 80px;
+  }
+  .section-5 .partners .partners-items div:first-child {
+    margin-bottom: 50px;
+  }
+
+  .section-6 {
+    padding: 50px 0px;
+  }
+  .section-6 .testimonials {
+    padding: 0px;
+  }
+  .section-6 .testimonials .item {
+    margin: 0px 10px 23px !important;
   }
 }
 

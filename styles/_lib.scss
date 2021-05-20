@@ -15,7 +15,9 @@ $btn-hover-color: #f1f1f1;
   align-items: $ai;
 }
 
-@mixin heading {
+@mixin heading($mt) {
+  color: white;
+  margin-bottom: $mt;
   h2, p {
     text-align: center;
   }
