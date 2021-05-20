@@ -55,7 +55,7 @@ body {
 
 //margin bottom{
 .section-2,
-.section-3 {
+.section-3, .section-4, section-5 {
   margin-top: 100px;
 }
 
@@ -159,7 +159,6 @@ body {
 
 //section 3
 .section-3 {
-
   .contents {
     @include lib.display-flex(flex, column, center, center);
     padding: 50px 100px;
@@ -221,6 +220,85 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+//section 4
+.section-4 {
+  padding: 50px 100px;
+
+  .gallery {
+    @include lib.display-flex(flex, column, center, center);
+    padding: 50px 100px;
+
+    .gallery-heading {
+      color: white;
+      @include lib.heading;
+      margin-bottom: 44px;
+    }
+
+    .gallery-items {
+      margin-bottom: 44px;
+
+      .item-line-1 {
+        @include lib.display-flex(flex, row, center, center);
+        margin-bottom: 44px;
+
+        .item {
+          margin-right: 20px;
+
+          &:nth-child(4) {
+            margin-right: 0px;
+          }
+        }
+      }
+
+      .item-line-2 {
+        @include lib.display-flex(flex, row, center, center);
+        flex-wrap: nowrap;
+
+        .item {
+          &:nth-child(even) {
+            flex: 1;
+            margin: 0px 20px;
+          }
+
+          &:nth-child(odd) {
+            flex: 2;
+          }
+        }
+      }
+
+      img {
+        border-radius: 12px;
+      }
+    }
+
+    button {
+      @include lib.secondary-btn;
+
+      &:hover {
+        @include lib.btn-hover;
+      }
+    }
+  }
+}
+
+//section 5
+.section-5 {
+  .partners {
+    @include lib.display-flex(flex, column, center, center);
+    padding: 50px 100px;
+
+    .partners-heading {
+      color: white;
+      @include lib.heading;
+    }
+
+    .partners-items {
+      padding: 50px 0px;
+
     }
   }
 }

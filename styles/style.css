@@ -41,13 +41,15 @@ body {
 .burger-menu {
   width: 100%;
 }
-.burger-menu .burger-item, .burger-menu .close-item {
+.burger-menu .burger-item,
+.burger-menu .close-item {
   display: none;
   color: white;
   font-size: 20px;
 }
 
-.section-2, .section-3 {
+.section-2,
+.section-3, .section-4, section-5 {
   margin-top: 100px;
 }
 
@@ -60,7 +62,8 @@ body {
   color: white;
   margin-bottom: 35px;
 }
-.section-1 .section-1-container .section-1-title h1, .section-1 .section-1-container .section-1-title p {
+.section-1 .section-1-container .section-1-title h1,
+.section-1 .section-1-container .section-1-title p {
   text-align: center;
 }
 .section-1 .section-1-container .section-1-title h1 {
@@ -220,6 +223,100 @@ body {
 }
 .section-3 .contents .contents-items .item .item-img img {
   width: 90%;
+}
+
+.section-4 {
+  padding: 50px 100px;
+}
+.section-4 .gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+.section-4 .gallery .gallery-heading {
+  color: white;
+  margin-bottom: 44px;
+}
+.section-4 .gallery .gallery-heading h2, .section-4 .gallery .gallery-heading p {
+  text-align: center;
+}
+.section-4 .gallery .gallery-heading h2 {
+  font-size: 52px;
+  font-weight: lighter;
+}
+.section-4 .gallery .gallery-heading p {
+  font-size: 20px;
+}
+.section-4 .gallery .gallery-items {
+  margin-bottom: 44px;
+}
+.section-4 .gallery .gallery-items .item-line-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.section-4 .gallery .gallery-items .item-line-1 .item {
+  margin-right: 20px;
+}
+.section-4 .gallery .gallery-items .item-line-1 .item:nth-child(4) {
+  margin-right: 0px;
+}
+.section-4 .gallery .gallery-items .item-line-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.section-4 .gallery .gallery-items .item-line-2 .item:nth-child(even) {
+  flex: 1;
+  margin: 0px 20px;
+}
+.section-4 .gallery .gallery-items .item-line-2 .item:nth-child(odd) {
+  flex: 2;
+}
+.section-4 .gallery .gallery-items img {
+  border-radius: 12px;
+}
+.section-4 .gallery button {
+  background-color: transparent;
+  padding: 10px 30px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border: 1px solid white;
+}
+.section-4 .gallery button:hover {
+  background-color: #f1f1f1;
+  color: #181818;
+}
+
+.section-5 .partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+.section-5 .partners .partners-heading {
+  color: white;
+}
+.section-5 .partners .partners-heading h2, .section-5 .partners .partners-heading p {
+  text-align: center;
+}
+.section-5 .partners .partners-heading h2 {
+  font-size: 52px;
+  font-weight: lighter;
+}
+.section-5 .partners .partners-heading p {
+  font-size: 20px;
+}
+.section-5 .partners .partners-items {
+  padding: 50px 0px;
 }
 
 .is-navbar-active {

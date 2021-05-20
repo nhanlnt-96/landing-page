@@ -19,13 +19,13 @@
     transition: left 1s;
   }
   .header-inline .header-menu .header-menu-item ul li {
+    width: 100%;
     text-align: center;
     padding: 10px;
     color: #181818;
   }
   .header-inline .header-menu .header-menu-item ul li:hover {
-    background-color: #4452FE;
-    color: white;
+    color: #4452FE;
   }
   .header-inline .header-menu form button {
     width: 120px;
@@ -82,6 +82,17 @@
   }
   .section-3 .contents-items .item:last-child {
     margin-bottom: 0px !important;
+  }
+
+  .section-4 .item-line-1 .item {
+    margin-right: 0px !important;
+    margin-bottom: 33px;
+  }
+  .section-4 .item-line-1 .item:last-child {
+    margin-bottom: 0px;
+  }
+  .section-4 .item-line-2 {
+    display: none !important;
   }
 }
 

@@ -27,13 +27,13 @@
           transition: left 1s;
 
           li {
+            width: 100%;
             text-align: center;
             padding: 10px;
             color: lib.$main-color;
 
             &:hover {
-              background-color: lib.$primary-color;
-              color: white;
+              color: lib.$primary-color;
             }
           }
         }
@@ -115,6 +115,24 @@
           margin-bottom: 0px !important;
         }
       }
+    }
+  }
+
+  //section 4
+  .section-4 {
+    .item-line-1 {
+      .item {
+        margin-right: 0px !important;
+        margin-bottom: 33px;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .item-line-2 {
+      display: none !important;
     }
   }
 }
