@@ -45,7 +45,8 @@ body {
 .burger-menu {
   width: 100%;
 
-  .burger-item, .close-item {
+  .burger-item,
+  .close-item {
     display: none;
     color: white;
     font-size: 20px;
@@ -53,7 +54,8 @@ body {
 }
 
 //margin bottom{
-.section-2, .section-3 {
+.section-2,
+.section-3 {
   margin-top: 100px;
 }
 
@@ -68,7 +70,9 @@ body {
     margin-bottom: 35px;
 
     .section-1-title {
-      h1, p {
+
+      h1,
+      p {
         text-align: center;
       }
 
