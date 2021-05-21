@@ -452,6 +452,10 @@ body {
   font-size: 32px;
   margin-right: 10px;
 }
+.section-8 .footer-items .social a {
+  color: white;
+  text-decoration: none;
+}
 .section-8 .footer-items .social .social-item {
   padding: 20px 0px;
 }

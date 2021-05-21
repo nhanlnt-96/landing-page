@@ -159,7 +159,7 @@
     margin-bottom: 75px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .section-2 .feature-heading {
     margin-bottom: 0px !important;
   }
@@ -247,12 +247,8 @@
     display: block;
     width: 100%;
   }
-
-  .section-8 .footer-items {
-    flex-wrap: wrap;
-  }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .section-3 .contents-items {
     flex-wrap: nowrap;
   }
@@ -281,34 +277,6 @@
   }
   .section-6 .testimonials .item {
     margin: 0px 10px 23px !important;
-  }
-
-  .section-7 .open-type {
-    flex-direction: column;
-    border-radius: 0px;
-    overflow: visible;
-    padding: 50px 0px;
-  }
-  .section-7 .open-type .open-type, .section-7 .open-type .open-type-content {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .section-7 .open-type .open-type-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 44px;
-  }
-  .section-7 .open-type .open-type-content h2 {
-    text-align: center;
-  }
-  .section-7 .open-type .open-type-img img:first-child {
-    display: none;
-  }
-  .section-7 .open-type .open-type-img img:last-child {
-    display: block;
-    width: 100%;
   }
 }
 
