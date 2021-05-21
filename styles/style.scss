@@ -55,7 +55,7 @@ body {
 
 //margin bottom{
 .section-2,
-.section-3, .section-4, section-5, section-6 {
+.section-3, .section-4, section-5, section-6, .section-7 {
   margin-top: 100px;
 }
 
@@ -353,6 +353,82 @@ body {
   .open-type {
     border-radius: 33px;
     background-color: #343434;
+    @include lib.display-flex(flex, row, none, center);
+    overflow: hidden;
+
+    .open-type-content {
+      padding-right: 86px;
+      padding-left: 40px;
+      color: white;
+
+      h2 {
+        font-size: 47px;
+        margin-bottom: 37px;
+        font-weight: lighter;
+      }
+
+      button {
+        @include lib.primary-btn;
+      }
+    }
+
+    .open-type-img {
+      img {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+//section 8
+.section-8 {
+  padding: 100px 0;
+
+  .footer-items {
+    flex-wrap: nowrap;
+    color: white;
+
+    .item {
+      h5 {
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        padding: 0px;
+
+        li {
+          list-style-type: none;
+          font-size: 16px;
+          margin-bottom: 19px;
+
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+
+    .social {
+      p {
+        font-size: 16px;
+      }
+
+      i {
+        font-size: 32px;
+        margin-right: 10px;
+      }
+
+      .social-item {
+        padding: 20px 0px;
+
+        i:nth-child(2) {
+          margin: 0px 24px;
+        }
+      }
+    }
   }
 }
 
